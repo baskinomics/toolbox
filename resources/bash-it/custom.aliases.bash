@@ -1,0 +1,5 @@
+alias gs='git status'
+alias gl='git log --pretty=format:"%h - %an - %s"'
+alias ls='exa'
+alias ll='exa -la'
+alias lt='exa -laT -L 1'
