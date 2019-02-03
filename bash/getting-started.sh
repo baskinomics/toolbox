@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Update
 apt update
+apt upgrade -y
 
-# Install Ansible
-apt install --yes software-properties-common
-apt-add-repository --yes --update ppa:ansible/ansible
-apt install --yes ansible
+apt install -y \
+  flashplugin-installer \
+  browser-plugin-freshplayer-pepperflash \
+  fonts-firacode
