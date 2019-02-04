@@ -6,3 +6,14 @@ This repository currently contains shell scripts to bootstrap my development env
 == Roadmap
 
 This will initially start as a collection of bash scripts as I come across the various tasks (as I am once again repeating this process currently). Once these tasks have been identified and automated via bash I will begin the migration to Ansible.
+
+== Getting Started
+
+Run the following commands:
+
+[source,bash]
+----
+$ git clone git@github.com:baskinomics/monastery.git
+$ cd monastery/bash
+$ sudo bash getting-started.sh
+----
