@@ -5,6 +5,7 @@ apt-get upgrade -y
 
 # Package installation
 apt-get install -y \
+  vim \
   flashplugin-installer \
   browser-plugin-freshplayer-pepperflash \
   asciidoc \
@@ -13,6 +14,9 @@ apt-get install -y \
   gnome-shell-pomodoro \
   gnome-shell-extension-weather
 
+git config --global user.name "Sean Baskin"
+git config --global user.email "seanbaskin@gmail.com"
+git config --global core.editor vim
 # TODO Bashit
 # TODO Define gs alias
 
