@@ -14,16 +14,17 @@ apt-get install -y \
   gnome-shell-pomodoro \
   gnome-shell-extension-weather
 
-git config --global user.name "Sean Baskin"
-git config --global user.email "seanbaskin@gmail.com"
-git config --global core.editor vim
-# TODO Bashit
-# TODO Define gs alias
-
-# Fonts
-apt-get install -y fonts-firacode
-sudo -u ${USERNAME} curl --location --output ~/.local/share/fonts/segoeui.ttf https://github.com/meloncholy/mt-stats-viewer/blob/master/public/fonts/segoe-ui/segoeui.ttf?raw=true
-sudo -u ${USERNAME} curl --location --output ~/.local/share/fonts/HelveticaNeue.ttf https://raw.githubusercontent.com/adachis/Lifehacker.me/master/fonts/HelveticaNeue.ttf
-sudo -u ${USERNAME} curl --location --output ~/.local/share/fonts/helvetica.ttf https://raw.githubusercontent.com/CartoDB/cartodb/master/app/assets/fonts/helvetica.ttf
-sudo -u ${USERNAME} curl --location --output ~/.local/share/fonts/Lucida%20Grande.ttf https://raw.githubusercontent.com/guardianproject/securereader/master/app/src/main/assets/fonts/Lucida%20Grande.ttf
-sudo -u ${USERNAME} fc-cache -f -v
+# Developement workspace scaffolding
+sudo -u ${USERNAME} mkdir home/${USERNAME}/development
+sudo -u ${USERNAME} mkdir home/${USERNAME}/development/git
+sudo -u ${USERNAME} mkdir home/${USERNAME}/development/ide
+sudo -u ${USERNAME} mkdir -p home/${USERNAME}/development/playground \
+  home/${USERNAME}/development/playground/graddle \
+  home/${USERNAME}/development/playground/julia \
+  home/${USERNAME}/development/playground/python \
+  home/${USERNAME}/development/playground/rust
+sudo -u ${USERNAME} mkdir -p home/${USERNAME}/development/languages \
+  home/${USERNAME}/development/languages/java \
+  home/${USERNAME}/development/languages/go \
+  home/${USERNAME}/development/languages/rust \
+  home/${USERNAME}/development/languages/python
