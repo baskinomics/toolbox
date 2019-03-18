@@ -2,6 +2,7 @@
 
 ## Resources
 [React Bootstrap](https://react-bootstrap.github.io/)
+[Tutorial: How to set up React, webpack, and Babel 7 from scratch (2019)](https://www.valentinog.com/blog/react-webpack-babel/)
 
 ## Building React Application
 
