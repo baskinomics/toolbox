@@ -1,6 +1,6 @@
 # JavaScript Notes
 
-# Glossary of Terms
+## Glossary of Terms
 
 ```
 NodeJS     → JavaScript Runtime
@@ -26,6 +26,7 @@ This section contains useful links that I found myself referencing frequently or
 - [Blog  - Creating a React app from scratch](https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658)
 - [Webpack Concepts](https://webpack.js.org/concepts)
 - [Webpack Guides](https://webpack.js.org/guides)
+- [npm-package.json](https://docs.npmjs.com/files/package.json)
 
 ## Toolchain
 

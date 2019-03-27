@@ -3,6 +3,8 @@
 ## Resources
 [React Bootstrap](https://react-bootstrap.github.io/)
 [Tutorial: How to set up React, webpack, and Babel 7 from scratch (2019)](https://www.valentinog.com/blog/react-webpack-babel/)
+[React Docs: Main Concepts](https://reactjs.org/docs/hello-world.html)
+[React Docs: Tutorial](https://reactjs.org/tutorial/tutorial.html)
 
 ## Building React Application
 
@@ -59,10 +61,13 @@ touch public/index.html
 # babel.rc configuration
 touch .babelrc
 
-# Configure webpack
+# Webpack
 yarn add webpack
 yarn add webpack-cli
 yarn add webpack-dev-server
+
+# Webpack --> Loaders
+yarn add html-loader
 yarn add style-loader
 yarn add css-loader
 yarn add babel-loader

@@ -20,4 +20,4 @@ $ sudo bash getting-started.sh
 
 I have decided to include markdown versions of various collections of notes on a variety of relevant subject matter in this repository. These notes may serve as the basis for future shell scripts or blog entries, but also as a resource for myself future and present.
 
-These documents can be found under the `notes/` directory.
+These documents can be found under the `./notes/` directory.
