@@ -19,7 +19,14 @@ cargo --> Rust's package manager
 
 ## Cargo Workflow
 
-<p>`cargo build` - Compile a local package and all of its dependencies</p>
-<p>`cargo run` - Run the main binary of the local package (`src/main.rs`)</p>
-<p>`cargo test` - Execute all unit and integration tests of a local package</p>
-<p>`cargo doc --open` - Build a package's documentation</p>
+### `cargo build`
+Compile a local package and all of its dependencies
+
+### `cargo run`
+Run the main binary of the local package (`src/main.rs`)
+
+### `cargo test`
+Execute all unit and integration tests of a local package
+
+### `cargo doc --open`
+Build a package's documentation
