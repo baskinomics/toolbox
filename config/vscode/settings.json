@@ -1,11 +1,17 @@
 {
+    "breadcrumbs.enabled": false,
     "editor.fontFamily": "'Fira Code'",
     "editor.fontLigatures": true,
-    "breadcrumbs.enabled": true,
-    "terminal.integrated.cursorStyle": "line",
     "editor.minimap.enabled": false,
     "editor.wordWrap": "off",
-    "workbench.statusBar.feedback.visible": false,
     "editor.renderWhitespace": "all",
-    "editor.renderControlCharacters": true
+    "editor.renderControlCharacters": true,
+    "editor.fontSize": 16,
+    "git.enabled": false,
+    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.external.linuxExec": "alacritty",
+    "telemetry.enableTelemetry": false,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.statusBar.feedback.visible": false,
 }
