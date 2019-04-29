@@ -6,8 +6,8 @@
 source log.bash
 
 # Temporary download directory
-DOWNLOAD_DIR='/home/zoo/development/temp'
-GO_VERSION='go1.12.4'
+DOWNLOAD_DIR="/home/zoo/development/temp"
+GO_VERSION="go1.12.4"
 ARCH='linux-amd64'
 GO_PATH='/home/zoo/development/git/go'
 
