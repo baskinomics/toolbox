@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# set -x
+#set -x
 
 # Logger
 source log.bash
@@ -25,7 +25,6 @@ rm $DOWNLOAD_DIR/$GO_VERSION.$ARCH.tar.gz
 
 # Make GOPATH directory
 log "Creating GOPATH directory"
-mkdir -p $GO_PATH
 mkdir -p $GO_PATH \
     $GO_PATH/src \
     $GO_PATH/pkg \
