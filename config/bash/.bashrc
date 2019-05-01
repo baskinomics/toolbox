@@ -100,9 +100,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# Python 3 Alias
-alias p='python3'
-
 # TODO --> never use this should delete.
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -119,6 +116,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# ---
+# ENV
+# ---
+
+export EDITOR="vim"
+
 #----------------
 # $PATH variables
 #----------------
@@ -133,12 +136,18 @@ export GOPATH='/home/zoo/development/git/go'
 # Export PATH and new variables
 export PATH=$EXA:$GO:$GOPATH:$PATH
 
+# --------------------
+# Bashit Configuration
+# --------------------
+
 # Path to the bash it configuration
 export BASH_IT="/home/zoo/.bash_it"
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
 export BASH_IT_THEME='powerline'
+
+export BASH_IT_CUSTOM="/home/zoo/development/git/monastery/bash/bash-it"
 
 # (Advanced): Change this to the name of your remote repo if you
 # cloned bash-it with a remote other than origin such as `bash-it`.
@@ -155,7 +164,6 @@ export IRC_CLIENT='irssi'
 
 # Set this to the command you use for todo.txt-cli
 export TODO="/home/zoo/bin/todo.sh -d /home/zoo/development/git/git-docs/todo/todo.cfg"
-alias todo="$TODO"
 
 # Set this to false to turn off version control status checking within the prompt for all themes
 export SCM_CHECK=true
