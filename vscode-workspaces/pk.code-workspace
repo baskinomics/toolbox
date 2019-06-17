@@ -2,14 +2,14 @@
     "folders": [
         {
             "name": "pharmacokinetics",
-            "path": "/home/zoo/development/git/pharmacokinetics"
+            "path": "/home/zoo/git/pharmacokinetics"
         },
         {
             "name": "crowsonkb/pharmacokinetics",
-            "path": "/home/zoo/development/git/third-party/pharmacokinetics"
+            "path": "/home/zoo/git/third-party/pharmacokinetics"
         },
         {
-            "path": "/home/zoo/development/git/git-docs"
+            "path": "/home/zoo/git/pk"
         }
     ]
 }

@@ -1,9 +1,0 @@
-alias gs='git status'
-alias ls='exa'
-alias ll='exa -la'
-alias lt='exa -laT -L 1'
-alias update='sudo apt update && apt list --upgradable'
-alias upgrade='sudo apt upgrade --yes && sudo apt autoremove --yes'
-alias p='python3'
-alias todo="$TODO"
-alias jitter="java -jar /home/zoo/development/git/jitter/build/libs/jitter-0.1.jar -c /home/zoo/development/git/config.yaml"
