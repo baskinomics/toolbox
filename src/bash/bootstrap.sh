@@ -9,6 +9,9 @@ source init.sh
 # Git functions
 source git.sh
 
+# User home directory functions
+source directory-scaffolding.sh
+
 # Tools script
 source tools.sh
 
@@ -21,9 +24,13 @@ updateAndUpgrade
 installPackages
 
 # Git
+log "Configuring git..."
 configure_git
 
 # Directory Scaffolding
+log "Setting up user home directory..."
+remove_default_user_dirs
+scaffold_user_dirs
 
 # Tools
 log "Installing tools..."
