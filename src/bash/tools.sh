@@ -3,11 +3,25 @@
 # Logger
 source log.bash
 
-# Variable declaration
+# The download directory
 downloadDir="$HOME/downloads"
+
+# bat version
 batVersion="0.11.0"
+
+# bat package
 batPackage="bat_${batVersion}_amd64.deb"
+
+# bat release URL
 batReleaseUrl="https://github.com/sharkdp/bat/releases/download/v${batVersion}/${batPackage}"
+
+# lsd version
+lsdVersion="0.15.1"
+
+# lsd package
+lsdPackage="lsd_${lsdVersion}_amd64.deb"
+
+lsdReleaseUrl="https://github.com/Peltoche/lsd/releases/download/${lsdVersion}/${lsdPackage}"
 
 # Name:
 #   installBatTool()
@@ -18,12 +32,7 @@ batReleaseUrl="https://github.com/sharkdp/bat/releases/download/v${batVersion}/$
 #   installBatTool
 function installBatTool ()
 {
-    # Navigate to the downloads directory
-    log "Installing bat package"
-    cd $downloadDir
-
     # Download the release package
-    log "PWD: ${PWD}"
     log "Downloading $batReleaseUrl"
     curl -L -O $batReleaseUrl
 
@@ -37,4 +46,30 @@ function installBatTool ()
     rm ${batPackage}
 }
 
+# Name:
+#   installLsdTool()
+# Description:
+#   Install the lsd tool (see: https://github.com/Peltoche/lsd).
+#   lsd is a next generation version of ls.
+# Example:
+#   installBatTool
+function installLsdTool ()
+{
+    # Download the release package
+    log "Downloading ${lsdReleaseUrl}"
+    curl -L -O ${lsdReleaseUrl}
+
+    # Install the release package
+    log "Installing lsd package"
+    dpkg -i ${lsdPackage}
+
+    # Cleanup
+    log "Successfully installed lsd"
+    log "Removing package file"
+    rm ${lsdPackage}
+}
+
+# Execute the functions and install the tools
+cd $downloadDir
 installBatTool
+installLsdTool
