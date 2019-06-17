@@ -41,7 +41,6 @@ function installBatTool ()
     dpkg -i ${batPackage}
 
     # Cleanup
-    log "Successfully installed bat"
     log "Removing package file"
     rm ${batPackage}
 }
@@ -64,7 +63,6 @@ function installLsdTool ()
     dpkg -i ${lsdPackage}
 
     # Cleanup
-    log "Successfully installed lsd"
     log "Removing package file"
     rm ${lsdPackage}
 }
