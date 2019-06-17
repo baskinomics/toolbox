@@ -66,8 +66,3 @@ function installLsdTool ()
     log "Removing package file"
     rm ${lsdPackage}
 }
-
-# Execute the functions and install the tools
-cd $downloadDir
-installBatTool
-installLsdTool
