@@ -3,9 +3,6 @@
 # Logger
 source log.bash
 
-# The download directory
-downloadDir="$HOME/downloads"
-
 # bat version
 batVersion="0.11.0"
 
