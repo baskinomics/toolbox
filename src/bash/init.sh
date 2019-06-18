@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Update apt cache and upgrade packages
-function updateAndUpgrade ()
+function update_and_upgrade ()
 {
     apt-get update
     apt-get upgrade -y
 }
 
 # Install initial packages
-function installPackages ()
+function install_packages ()
 {
     apt-get install -y vim
     apt-get install -y flashplugin-installer

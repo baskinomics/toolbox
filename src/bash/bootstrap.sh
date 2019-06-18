@@ -20,8 +20,8 @@ downloadDir="$HOME/downloads"
 
 # Update and upgrade apt packages
 log "Updating package cache and upgrading packages..."
-updateAndUpgrade
-installPackages
+update_and_upgrade
+install_packages
 
 # Git
 log "Configuring git..."
