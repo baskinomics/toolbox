@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Installs Nerd Fonts
 function install_nerd_fonts ()
 {
@@ -17,7 +19,7 @@ function install_nerd_fonts ()
 function install_misc_fonts ()
 {
     apt-get install -y fonts-open-sans
-    
+
     # Build fonts
     fc-cache -f -v
 }
