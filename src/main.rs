@@ -158,10 +158,10 @@ pub mod fonts {
 
 /// Executes the various commands.
 fn main() {
-    let commands: ArgMatches = App::new("monastery")
+    let commands: ArgMatches = App::new("rune")
         .version("0.0.1")
         .author("Sean Baskin <seanbaskin@gmail.com>")
-        .about("Opinionated yet configurable tool to manage your development environment.")
+        .about("Opinionated configuration management tool to manage the state of your development environment.")
         .get_matches();
 
     // Install tools

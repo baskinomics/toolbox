@@ -1,18 +1,43 @@
-# Monastery
+# `rune`
 
-__Notice__: I am currently porting the existing functionality exposed as bash script to a Rust-based CLI program.
+__Notice__: I am currently porting the existing functionality exposed as bash scripts to a Rust-based CLI program. Expect breaking changes.
 
-__Note__: Chnage repository name to `rune`.
-
-This repository contains shell scripts, configuration files, etcetera to bootstrap my development environment in a fresh Ubuntu installation for various programming languages and frameworks.
+`rune` is an opinionated configuration management tool with a specific focus on an engineer's development environment. Originally consisting of a collection of shell scripts, configuration files, etcetera to bootstrap my development environment in a fresh Ubuntu installation for various programming languages and frameworks, `rune`'s purpose and scope have morphed to address what I feel is a lack of a consistent, repeatable, and configurable tool to setup and maintain a development environment. 
 
 ## Getting Started
+
+### tldr;
 
 Run the following commands:
 
 ```bash
-$ git clone git@github.com:baskinomics/monastery.git
-$ cd monastery/src/bash
-$ chmod +x bootstrap.sh
-$ sudo ./bootstrap.sh
+# Build the artifact
+cargo build
+
+# Still undecided at approach, but currently if the exposed functionality needs
+# root privelages you will need to execute the binary using sudo.
+
+# Non-privelaged tasks
+./target/debug/rune
+
+# Privelaged tasks
+sudo ./target/debug/rune
+```
+
+## Examples
+
+### Usage
+
+```bash
+$ ./target/debug/rune --help
+rune 0.0.1
+Sean Baskin <seanbaskin@gmail.com>
+Opinionated configuration management tool to manage the state of your development environment.
+
+USAGE:
+    rune
+
+FLAGS:
+    -h, --help       Prints help information
+    -V, --version    Prints version information
 ```
