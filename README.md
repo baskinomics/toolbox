@@ -1,5 +1,7 @@
 # Monastery
 
+__Note__: Chnage repository name to `rune`.
+
 This repository contains shell scripts, configuration files, etcetera to bootstrap my development environment in a fresh Ubuntu installation for various programming languages and frameworks.
 
 ## Getting Started
