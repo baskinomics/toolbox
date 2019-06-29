@@ -6,6 +6,8 @@ __Notice__: I am currently porting the existing functionality exposed as bash sc
 
 This project also represents a learning environment and playground for the Rust programming language and me. I have been letting the waves lap at my feet in regards to Rust, and I plan to use this project as the spring board to dive in and take the plunge. 
 
+At present, development will be focused on PopOS! as this is the Ubuntu distribution that I use. However, as this portion of the project stablizes I plan to expand support for various Unix environments and distributions. A contributor's guide will also be fleshed out, as I'm certainly no expert on all of them and their various idiosyncrasies and would welcome both interest in the project and feedback on my own implementation.
+
 ## Getting Started
 
 ### tldr;
