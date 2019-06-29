@@ -1,7 +1,4 @@
-use crate::package_manager::apt::install_vim;
-use crate::package_manager::apt::update;
-use crate::package_manager::apt::upgrade;
-use crate::tools::installbat;
+use crate::tools::{bat, vim};
 
 /// Represents different operating system package managers.
 pub mod package_manager {
@@ -39,16 +36,6 @@ pub mod package_manager {
 
             println!("{}", String::from_utf8_lossy(&_apt_upgrade.stdout));
         }
-
-        /// Executes the `sh` command with `apt-get install -y vim` as the command.
-        pub fn install_vim() {
-            let _apt_install = Command::new("apt-get")
-                .args(&["install", "--yes", "vim"])
-                .output()
-                .expect("Failed to execute process.");
-
-            println!("{}", String::from_utf8_lossy(&_apt_install.stdout));
-        }
     }
 }
 
@@ -62,10 +49,19 @@ pub mod package_manager {
 pub mod tools {
     use std::process::{Command, Output};
 
+    /// Executes the `sh` command with `apt-get install -y vim` as the command.
+    pub fn vim() {
+        let _apt_install = Command::new("apt-get")
+            .args(&["install", "--yes", "vim"])
+            .output()
+            .expect("Failed to execute process.");
+
+        println!("{}", String::from_utf8_lossy(&_apt_install.stdout));
+    }
+
     /// Installs the [`bat`](https://github.com/sharkdp/bat) tool.
-    ///
-    /// todo https://github.com/sharkdp/bat/releases/download/v0.11.0/bat_0.11.0_amd64.deb
-    pub fn installbat() {
+    pub fn bat() {
+        // todo make this configurable
         let release_url: String =
             "https://github.com/sharkdp/bat/releases/download/v0.11.0/bat_0.11.0_amd64.deb"
                 .parse()
@@ -85,16 +81,17 @@ pub mod tools {
 
         println!("{}", String::from_utf8_lossy(&dpkg.stdout));
 
-        let dpkg: Output = Command::new("rm")
+        let rm: Output = Command::new("rm")
             .arg("bat_0.11.0_amd64.deb")
             .output()
             .expect("Failed to execute process.");
 
-        println!("{}", String::from_utf8_lossy(&dpkg.stdout));
+        println!("{}", String::from_utf8_lossy(&rm.stdout));
     }
 }
 
 /// Executes the various commands.
 fn main() {
-    installbat();
+    vim();
+    bat();
 }
