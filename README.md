@@ -28,9 +28,21 @@ cargo build
 sudo ./target/debug/rune
 ```
 
-## Examples
+## Roadmap
 
-### Usage
+The planned features for `v1.0.0` are the following:
+
+* Installation and support for various command-line tools such as [`vim`](), [`bat`](), [`lsd`](), [`docker`](), etc.,
+* Installation and support for various text editors and IDEs (Atom, VSCode, IntelliJ),
+* Installation and support for various programming languages and frameworks,
+* Installation and support for [`bash-it`](https://github.com/Bash-it/bash-it),
+* `git` configuration and support,
+* and installation of developer fonts and common web fonts.
+
+
+## Usage
+
+### Help
 
 ```bash
 $ ./target/debug/rune --help
