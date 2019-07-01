@@ -33,19 +33,19 @@ sudo ./target/debug/rune
 The planned features for `v1.0.0` are the following:
 
 * Installation and support for various command-line tools such as [`vim`](), [`bat`](), [`lsd`](), [`docker`](), etc.,
-* Installation and support for various text editors and IDEs (Atom, VSCode, IntelliJ),
+* Installation and support for various text editors and IDEs (Vim, Atom, VSCode, IntelliJ),
 * Installation and support for various programming languages and frameworks,
 * Installation and support for [`bash-it`](https://github.com/Bash-it/bash-it),
 * `git` configuration and support,
 * and installation of developer fonts and common web fonts.
 
 
-## Usage
+## Usage and Commands
 
 ### Help
 
 ```bash
-$ ./target/debug/rune --help
+$ rune --help
 rune 0.0.1
 Sean Baskin <seanbaskin@gmail.com>
 Opinionated configuration management tool to manage the state of your development environment.
@@ -57,3 +57,7 @@ FLAGS:
     -h, --help       Prints help information
     -V, --version    Prints version information
 ```
+
+### Install Tools
+
+To install a tool, use the `rune tool` subcommand. 
