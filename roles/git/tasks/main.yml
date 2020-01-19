@@ -1,0 +1,14 @@
+---
+- name: Set global git user name
+  git_config:
+    name: user.name
+    value: Sean Baskin
+    scope: global
+    state: present
+
+- name: Set global git user email
+  git_config:
+    name: user.email
+    value: seanbaskin@gmail.com
+    scope: global
+    state: present

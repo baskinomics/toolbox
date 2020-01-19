@@ -1,0 +1,7 @@
+---
+# todo documentation
+
+- hosts: workstation
+  remote_user: zoo
+  roles:
+    - git
